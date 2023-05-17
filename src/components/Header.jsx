@@ -2,7 +2,7 @@ import React from 'react'
 
 const Header = () => {
   return (
-        <header className=' flex justify-between py-8 px-6 '>
+        <header className=' flex justify-between py-8 px-6  text-slate-600'>
           <section>
             <button>
             <h1 className=' text-4xl cursor-pointer'>vLf</h1>
