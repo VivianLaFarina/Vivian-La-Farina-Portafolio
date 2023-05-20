@@ -1,8 +1,15 @@
 import React from 'react'
 
+
+const handleClickLogout = () => {
+    localStorage.removeItem('token')
+    window.location.href = '/login'
+
+}
+
 const Header = () => {
   return (
-        <header className=' flex justify-between py-8 px-6  text-slate-600'>
+        <header className=' flex justify-between py-8 px-6  text-slate-600 max-w-[1200px] mx:auto '>
           <section>
             <button>
             <h1 className=' text-4xl cursor-pointer'>vLf</h1>
@@ -16,7 +23,7 @@ const Header = () => {
               </button>
 
               <button >
-              <i className='bx bxs-grid text-4xl'></i>
+              <i onClick={handleClickLogout} className='bx bxs-grid text-4xl '></i>
               </button>
            </section>
         </header>
