@@ -23,7 +23,8 @@ const Header = () => {
               </button>
 
               <button >
-              <i onClick={handleClickLogout} className='bx bxs-grid text-4xl '></i>
+              <i className='bx bxs-grid text-4xl '></i>
+              
               </button>
            </section>
         </header>
