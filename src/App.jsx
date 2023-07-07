@@ -8,30 +8,34 @@ import Menu from './pages/Menu'
 
 
 
+
 function App() {
 
   return (
-     <section>
-      <div className="  font-['Bruno_Ace']">
+    <>
 
-        
-      <Routes >
-        <Route path='/' element={<Home />} />
-        <Route path='/projects' element={<Projects/>} />
-        <Route path='/about' element={<About />}/>
-        <Route path='/manu' element={<Menu />}/>
-      </Routes>
+      <main className="  font-['Bruno_Ace']">
 
 
-      </div>
+        <Routes >
+          <Route path='/' element={<Home />} />
+          <Route path='/projects' element={<Projects />} />
+          <Route path='/about' element={<About />} />
+          <Route path='/menu' element={<Menu />} />
+
+
+        </Routes>
+
+
+      </main>
 
 
 
-      
-    
 
-     </section>
-     
+
+
+    </>
+
 
 
 

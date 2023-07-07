@@ -1,50 +1,34 @@
-import React from 'react'
-import Header from '../components/Header'
-import Navbar1 from '../components/Navbar1'
+import React from 'react';
+import Header from '../components/Header';
+import Navbar1 from '../components/Navbar1';
 
 const Home = () => {
 
-    const handleSubmit = (e) => {
-        e.preventDefault()
-
-    }
 
     return (
-        <section className=' min-h-screen grid grid-rows-[auto_1fr]'>
+        <section className='min-h-screen'>
             {/* Portafolio Vivian La Farina */}
-
-
-
             {/* Header */}
             <Header />
 
-            {/* Introdotion seccion */}
-            <main className=' text-slate-600'>
-                <section>
-                    <article className='grid-flow-row py-12 px-10 space-x-4  font-medium'>
-                        <div >
-                            <img src="" alt="" />
-                        </div>
-                        <h2 className=' text-3xl px-5 '>Hey, I'm
-                            <p className=' text-5xl font-extrabold py-2 px-4'>Vivian La farina
-                            </p>
-                        </h2>
-                        <p className=' text-lg py-8 '> I'am a Communicator &  Web Developer, specialized in digital projects</p>
-                    </article>
-                </section>
-
-                <section>
-                    <Navbar1 />
-
-
-
-
-                </section>
-
+            {/* Introduction section */}
+            <main className='text-slate-600 px-6 py-8 md:px-10 md:py-12 flex flex-col items-center justify-center'>
+                <article className='space-y-4 text-center font-medium'>
+                    <div>
+                        <img src="" alt="" />
+                    </div>
+                    <h2 className='text-4xl md:text-5xl lg:text-6xl font-extrabold'>
+                        Hey, I'm
+                        <p className='text-5xl md:text-6xl lg:text-8xl py-7'>Vivian La Farina</p>
+                    </h2>
+                    <p className='text-lg md:text-xl lg:text-2xl py-6 '>
+                        I am a Web project Developer
+                    </p>
+                </article>
+                <Navbar1 />
             </main>
-
         </section>
-    )
-}
+    );
+};
 
-export default Home
+export default Home;
