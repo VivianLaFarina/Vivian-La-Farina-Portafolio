@@ -10,7 +10,7 @@ const Menu = () => {
       <Header />
 
       {/* Introduction section */}
-      <section className='flex justify-center py-10 px-4 text-4xl'>
+      <section className='flex justify-center py-10 px-4 text-4xl md:text-6xl'>
         <table className="table p-4 bg-white rounded-lg shadow">
           <thead>
             <tr>
@@ -26,12 +26,10 @@ const Menu = () => {
                 <i className='bx bx-terminal'></i>
               </td>
               <td className="border-b-2 p-4 dark:border-dark-5">
-                <button className='font-["Bruno_Ace"]'>
-                  <Link to="/" >
-                    <i className=''></i>
-                    Home
-                  </Link>
-                </button>
+                <Link to="/" className='font-["Bruno_Ace"]'>
+                  <i className=''></i>
+                  Home
+                </Link>
               </td>
             </tr>
             <tr className="text-gray-600">
@@ -39,12 +37,10 @@ const Menu = () => {
                 <i className='bx bx-briefcase-alt text-slate-500 text-3xl'></i>
               </td>
               <td className="border-b-2 p-4 dark:border-dark-5">
-                <button className='font-["Bruno_Ace"]'>
-                  <Link to="/projects">
-                    <i className=''></i>
-                    Work
-                  </Link>
-                </button>
+                <Link to="/projects" className='font-["Bruno_Ace"]'>
+                  <i className=''></i>
+                  Work
+                </Link>
               </td>
             </tr>
             <tr className="text-gray-600">
@@ -52,12 +48,10 @@ const Menu = () => {
                 <i className='bx bx-info-circle text-slate-500 text-3xl'></i>
               </td>
               <td className="border-b-2 p-4 dark:border-dark-5">
-                <button className='font-["Bruno_Ace"]'>
-                  <Link to="/about">
-                    <i className=''></i>
-                    About
-                  </Link>
-                </button>
+                <Link to="/about" className='font-["Bruno_Ace"]'>
+                  <i className=''></i>
+                  About
+                </Link>
               </td>
             </tr>
             <tr className="text-gray-600">
@@ -65,27 +59,16 @@ const Menu = () => {
                 <i className='bx bx-conversation text-slate-500 text-3xl'></i>
               </td>
               <td className="border-b-2 p-4 dark:border-dark-5">
-                <button className='font-["Bruno_Ace"]'>
-                  <Link to="/contact">
-                    <i className=''></i>
-                    Contact
-                  </Link>
-                </button>
+                <Link to="/contact" className='font-["Bruno_Ace"]'>
+                  <i className=''></i>
+                  Contact
+                </Link>
               </td>
             </tr>
           </tbody>
         </table>
       </section>
-      <section className='flex flex-col items-center justify-center gap-6 px-4 py-8 md:px-10 md:py-12 text-slate-500 text-6xl'>
-        <button className='flex justify-center gap-2'>
-          <i className='bx bxl-github'></i>
-          <a href="/projects"></a>
-        </button>
-        <button className='py-3 md:py-0 flex justify-center gap-2'>
-          <i className='bx bxl-linkedin'></i>
-          <a href="/about"></a>
-        </button>
-      </section>
+
     </section>
   );
 };

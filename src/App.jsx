@@ -5,6 +5,7 @@ import Home from './pages/Home'
 import Projects from './pages/Projects'
 import './App.css'
 import Menu from './pages/Menu'
+import Contact from './pages/Contact'
 
 
 
@@ -22,6 +23,7 @@ function App() {
           <Route path='/projects' element={<Projects />} />
           <Route path='/about' element={<About />} />
           <Route path='/menu' element={<Menu />} />
+          <Route path='/contact' element={<Contact />} />
 
 
         </Routes>

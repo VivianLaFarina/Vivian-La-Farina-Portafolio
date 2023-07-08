@@ -19,10 +19,10 @@ const Home = () => {
                     </div>
                     <h2 className='text-4xl md:text-5xl lg:text-6xl font-extrabold'>
                         Hey, I'm
-                        <p className='text-5xl md:text-6xl lg:text-8xl py-7'>Vivian La Farina</p>
+                        <p className='text-5xl md:text-6xl lg:text-8xl py-8'>Vivian La Farina</p>
                     </h2>
-                    <p className='text-lg md:text-xl lg:text-2xl py-6 '>
-                        I am a Web project Developer
+                    <p className='text-lg md:text-xl lg:text-2xl py-5 '>
+                        I am a Web project Developer, specialized in E-businesses
                     </p>
                 </article>
                 <Navbar1 />
