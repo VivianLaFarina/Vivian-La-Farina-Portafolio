@@ -8,17 +8,17 @@ const handleClickLogout = () => {
 
 const Header = () => {
   return (
-    <header className='flex justify-between py-20 px-6 md:px-12 text-slate-600 max-w-[1200px] mx-auto'>
+    <header className='flex justify-between py-20 px-6 md:px-8 text-slate-600 max-w-[1400px] mx-auto t'>
       <section>
         <button className='font-["Bruno_Ace"]'>
-          <Link to="/" className='text-5xl'>
+          <Link to="/" className='text-6xl'>
             <i className=''></i>
             vLf
           </Link>
         </button>
       </section>
 
-      <section className='flex justify-between gap-4 items-center text-4xl'>
+      <section className='flex justify-between gap-4 items-center text-5xl'>
 
 
 
