@@ -72,7 +72,7 @@ const Projects = () => {
                 months and was a very challenging one.
               </p>
               <a
-                href="#"
+                href="https://vlf-academlo-shop-ecomerce.netlify.app"
                 className="bg-slate-400 p-1 text-lg absolute bottom-0 right-0"
               >
                 <i className="bx bx-link-external text-slate-700"></i>
