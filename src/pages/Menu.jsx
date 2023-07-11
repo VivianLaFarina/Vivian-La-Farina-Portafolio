@@ -11,7 +11,7 @@ const Menu = () => {
 
       {/* Introduction section */}
       <section className='flex justify-center py-10 px-4 text-4xl md:text-6xl'>
-        <table className="table p-4 bg-white rounded-lg shadow">
+        <table className="table p-4 bg-white rounded-lg shadow ">
           <thead>
             <tr>
               <th className="border-b-2 p-4 text-3xl text-slate-600 dark:border-dark-5 whitespace-nowrap font-normal"></th>
