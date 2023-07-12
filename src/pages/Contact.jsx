@@ -1,21 +1,31 @@
 import emailjs from "@emailjs/browser";
 import Header from "../components/Header";
+import { useState, useRef } from "react";
+
+
 
 const Contact = () => {
-    const handleSubmit = (e) => {
+    const formRef = useRef(null);
+
+    const handleSubmit = async (e) => {
         e.preventDefault();
 
-        emailjs
-            .sendForm(
-                import.meta.env.VITE_APP_SERVICE_ID,
-                import.meta.env.VITE_APP_TEMPLATE_ID,
+        try {
+            await emailjs.sendForm(
+                process.env.REACT_APP_SERVICE_ID,
+                process.env.REACT_APP_TEMPLATE_ID,
                 e.target,
-                import.meta.env.VITE_APP_PUBLIC_KEY
-            )
-            .then((res) => console.log(res.text))
-            .catch((err) => console.log(err));
-    };
+                process.env.REACT_APP_USER_ID
+            );
 
+            // Restablecer el formulario después del envío exitoso
+            if (formRef.current) {
+                formRef.current.reset();
+            }
+        } catch (error) {
+            console.log(error);
+        }
+    };
     return (
 
         <main>

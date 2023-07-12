@@ -13,6 +13,7 @@ import Contact from './pages/Contact'
 function App() {
 
   return (
+
     <>
 
       <main className="  font-['Bruno_Ace']">
