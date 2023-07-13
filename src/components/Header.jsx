@@ -11,7 +11,7 @@ const Header = () => {
     <header className='flex justify-between py-12 px-6 md:px-2 text-slate-600 max-w-[1200px] mx-auto   '>
       <section>
         <button className='font-["Bruno_Ace"]'>
-          <Link to="/" className='text-4xl md:text-5xl'>
+          <Link to="/" className='text-4xl md:text-4xl'>
             <i></i>
             vLf
           </Link>
@@ -22,7 +22,7 @@ const Header = () => {
 
 
 
-        <Link to="/menu" className='text-4xl md:text-5xl'>
+        <Link to="/menu" className='text-4xl md:text-6xl'>
           <i className='bx bx-command'></i>
         </Link>
       </section>
