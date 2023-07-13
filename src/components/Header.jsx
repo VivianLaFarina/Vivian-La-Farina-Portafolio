@@ -22,7 +22,7 @@ const Header = () => {
 
 
 
-        <Link to="/menu" className='text-4xl md:text-5xl'>
+        <Link to="/menu" className='text-4xl md:text-xl'>
           <i className='bx bx-command'></i>
         </Link>
       </section>
