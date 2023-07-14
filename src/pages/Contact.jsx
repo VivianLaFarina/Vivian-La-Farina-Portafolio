@@ -60,7 +60,7 @@ const Contact = () => {
                             id="name"
                             type="text"
                             name="from_name"
-                        />
+                            placeholder=' Type your name?' />
                     </div>
                     <div className="grid gap-1">
                         <label className="text-lg" htmlFor="email">
@@ -71,6 +71,7 @@ const Contact = () => {
                             id="email"
                             type="text"
                             name="email"
+                            placeholder=' Please type your email-address?'
                         />
                     </div>
                     <div className="grid gap-1">
@@ -82,6 +83,7 @@ const Contact = () => {
                             id="message"
                             rows="5"
                             name="message"
+                            placeholder=' Please type provide the general idea?'
                         ></textarea>
                     </div>
 
