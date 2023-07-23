@@ -1,29 +1,24 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 const Navbar1 = () => {
     return (
 
 
         <nav className=' grid grid-row-s py-20  md:py-30 md:py-18 md:space-y-0 md:grid md:grid-cols-2   md:gap-40 text-slate-600 transform ' >
 
-            <button className='  text-xl md:text-2xl flex justify-center gap-10 '>
-                <section>
-                    <i className=' transform absolute hover:translate-x-full transition duration-1000  bx bxs-right-arrow text-xl  '></i>
-                </section>
-                <section>
-                    <a href="/projects">projects</a>
-                </section>
-            </button >
+            <Link to="/projects" className='  text-xl md:text-2xl flex space-x-10 '>
+
+                <i className=' transform absolute hover:translate-x-full transition duration-1000  bx bxs-right-arrow text-xl  '></i>
+                <h2 className='transform hover:underline'>projects</h2>
+
+            </Link >
 
 
-            <button className='  text-xl md:text-2xl flex justify-center gap-10 '>
-                <section>
-                    <i className=' transform absolute hover:translate-x-full transition duration-1000 bx bxs-right-arrow text-xl  '></i>
+            <Link to="/about" className='  text-xl md:text-2xl flex space-x-10 '>
 
-                </section>
-                <section>
-                    <a href="/about">about me</a>
-                </section>
-            </button>
+                <i className=' transform absolute  hover:translate-x-full transition duration-1000 bx bxs-right-arrow text-xl  '></i>
+                <h2 className=' transform hover:underline duration-1000 '>about me</h2>
+            </Link>
 
 
 
