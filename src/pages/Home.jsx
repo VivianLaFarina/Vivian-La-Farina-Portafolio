@@ -12,7 +12,7 @@ const Home = () => {
             <Header />
 
             {/* Introduction section */}
-            <main className='text-slate-600 px-6 py-6 md:px-6 md:py-4 flex flex-col items-center justify-center'>
+            <main className='text-slate-600 px-6 py-4 md:px-6 md:py-4 flex flex-col items-center justify-center'>
                 <article className='space-y-4 text-center font-medium'>
                     <div>
                         <img src="" alt="" />

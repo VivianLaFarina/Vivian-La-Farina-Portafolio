@@ -4,7 +4,7 @@ const Navbar1 = () => {
     return (
 
 
-        <nav className=' grid grid-row-s py-20  md:py-30 md:py-18 md:space-y-0 md:grid md:grid-cols-2   md:gap-40 text-slate-600 transform gap-5' >
+        <nav className=' grid grid-row-s py-14  md:py-30 md:py-18 md:space-y-0 md:grid md:grid-cols-2   md:gap-40 text-slate-600 transform gap-5' >
 
             <Link to="/projects" className='  text-xl md:text-2xl flex space-x-10 '>
 
