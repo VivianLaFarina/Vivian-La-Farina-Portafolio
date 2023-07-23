@@ -8,9 +8,9 @@ const Projects = () => {
     <main className=''>
 
       <Header />
-      <section className=" text-slate-500 p-4 py-4 grid gap-10 sm:grid-cols-2 max-w-[1200px] mx-auto">
+      <section className=" text-slate-500 p-4 py-4 grid gap-10 sm:grid-cols-2 max-w-[1200px] ">
         {/* Seccion izquierda */}
-        <section className="grid gap-10">
+        <section className="grid gap-10 ] ">
           <div>
             <h3 className="uppercase text-sm text-gray-400 font-semibold">
               My projects
