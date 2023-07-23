@@ -12,10 +12,13 @@ const Header = () => {
 
 
 
-      <section>
-        <button className='font-["Bruno_Ace"]'>
+      <section className=''>
+        <button className='font-["Bruno_Ace"]  py-7 flex justify-between '>
           <Link to="/" className=' text-4xl md:text-5xl'>
-            <h1 className=' transform hover:scale-110 '>vLf</h1>
+            <div>
+              <h1 className=' transform hover:scale-x-50  hover:scale-y-110 duration-1000  hover:translate-x-6 \   '>vLf</h1>
+            </div>
+
 
           </Link>
         </button>
