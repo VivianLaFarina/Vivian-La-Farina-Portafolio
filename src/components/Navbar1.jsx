@@ -8,8 +8,8 @@ const Navbar1 = () => {
 
             <Link to="/projects" className='  text-lg md:text-xl lg:text-2xl flex space-x-10 '>
 
-                <i className=' transform absolute hover:translate-x-full transition duration-1000  bx bxs-right-arrow text-xl lg:text-2xl '></i>
-                <h2 className='transform hover:underline'>projects</h2>
+                <i className=' transform absolute hover:translate-x-full transition duration-1000  bx bxs-right-arrow text-xl lg:text-2xl  '></i>
+                <h2 className='transform hover:underline-offset-8 hover:underline duration-1000  '>projects</h2>
 
             </Link >
 
@@ -17,7 +17,7 @@ const Navbar1 = () => {
             <Link to="/about" className='  text-lg md:text-xl lg:text-2xl flex space-x-10 '>
 
                 <i className=' transform absolute  hover:translate-x-full transition duration-1000 bx bxs-right-arrow text-xl lg:text-2xl '></i>
-                <h2 className=' transform hover:underline duration-1000 '>about me</h2>
+                <h2 className=' transform hover:underline-offset-8 hover:underline duration-1000 '>about me</h2>
             </Link>
 
 
