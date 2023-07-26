@@ -12,16 +12,16 @@ const Home = () => {
             <Header />
 
             {/* Introduction section */}
-            <main className='text-slate-600 px-6 py-4 md:px-6 md:py-4 flex flex-col items-center justify-center'>
-                <article className='space-y-4 text-center font-medium'>
+            <main className='text-slate-600 px-6 md:px-6 md:py-4  lg:py-0 flex flex-col items-center justify-center'>
+                <article className='space-y-2 text-center font-medium'>
                     <div>
                         <img src="" alt="" />
                     </div>
-                    <h2 className='text-2xl md:text-4xl lg:text-5xl font-extrabold'>
+                    <h2 className='text-xl md:text-3xl lg:text-4xl font-extrabold'>
                         Hey, I'm
-                        <p className='text-5xl md:text-4xl  lg:text-6xl py-4 transition duration-600 transform hover:scale-x-125 hover:scale-y-110 duration-600  '> Vivian La Farina</p>
+                        <p className='text-3xl md:text-4xl  lg:text-6xl py-2  lg:py-4 transition duration-600 transform hover:scale-x-125 hover:scale-y-110 duration-600  '> Vivian La Farina</p>
                     </h2>
-                    <p className=' py-2 text-xl md:text-xl lg:text-xl  '>
+                    <p className=' text-md md:text-xl lg:text-2xl  lg:py-0 '>
                         I am a Web project Developer, specialized in E-businesses
                     </p>
                 </article>

@@ -7,6 +7,7 @@ import './App.css'
 import Menu from './pages/Menu'
 import Contact from './pages/Contact'
 import NotFound from './pages/NotFound'
+import ContactBotton from './components/ContactBotton'
 
 
 
@@ -27,9 +28,8 @@ function App() {
           <Route path='/menu' element={<Menu />} />
           <Route path='/contact' element={<Contact />} />
           <Route path='/*' element={<NotFound />} />
-
-
         </Routes>
+        <ContactBotton />
 
 
       </main>
