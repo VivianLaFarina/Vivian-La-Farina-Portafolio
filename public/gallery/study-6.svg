@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img">
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#1b2924"/><stop offset="1" stop-color="#101915"/></linearGradient>
+<linearGradient id="hot" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ffad70"/><stop offset="1" stop-color="#d55338"/></linearGradient>
+<pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#4a6551" stroke-opacity=".25"/></pattern>
+</defs><rect width="800" height="600" fill="url(#bg)"/><rect width="800" height="600" fill="url(#grid)"/>
+<circle cx="400" cy="300" r="245" fill="#fa8544" fill-opacity=".035" stroke="#718b73" stroke-opacity=".2"/>
+<g stroke="#ec935b" stroke-width="2.8" fill="none"><path d="m400 92 153 90-153 91-153-91zM247 182v125l153 90 153-90V182M400 273v124"/><path d="m400 340 163 95M400 340 238 435" stroke-dasharray="5 10"/></g><g fill="#e6824a" fill-opacity=".3" stroke="#f6b98c" stroke-width="2"><path d="m400 130 93 53-93 55-93-55z"/><ellipse cx="230" cy="440" rx="73" ry="25"/><ellipse cx="570" cy="440" rx="73" ry="25"/></g><g stroke="#b9dfc0" stroke-width="3" fill="none"><path d="M168 438v45M292 438v45M507 438v45M630 438v45"/></g>
+<text x="38" y="552" font-family="Arial,sans-serif" font-size="15" fill="#a8bcae" letter-spacing="4">VLF / ARCHITECTURE STUDY</text></svg>

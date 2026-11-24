@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="UTF-8"><title>Netlify Form Registration</title></head>
+<body>
+  <!-- Netlify detects this static form in the production build; the React form alone is invisible to deployment-time parsing. -->
+  <form hidden name="contact" data-netlify="true" netlify-honeypot="bot-field" method="POST">
+    <input type="hidden" name="form-name" value="contact" />
+    <input type="text" name="bot-field" />
+    <input type="text" name="name" />
+    <input type="email" name="email" />
+    <textarea name="message"></textarea>
+    <button type="submit">Submit</button>
+  </form>
+</body>
+</html>

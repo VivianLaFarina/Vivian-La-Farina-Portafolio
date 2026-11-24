@@ -1,34 +1,34 @@
-import React from 'react';
-import Header from '../components/Header';
-import Navbar1 from '../components/Navbar1';
+import { Link } from 'react-router-dom';
+import { usePreferences } from '../context/PreferencesContext';
+import { usePageTitle } from '../lib/seo';
+import { ArchitectureVisual } from '../components/ArchitectureVisual';
+import { ArchitectureDiagram } from '../components/ArchitectureDiagram';
+import { ArticleCard } from '../components/ArticleCard';
 
-const Home = () => {
-
-
-    return (
-        <section className='min-h-screen'>
-            {/* Portafolio Vivian La Farina */}
-            {/* Header */}
-            <Header />
-
-            {/* Introduction section */}
-            <main className='text-slate-600 px-6 md:px-6 md:py-4  lg:py-0 flex flex-col items-center justify-center'>
-                <article className='space-y-2 text-center font-medium'>
-                    <div>
-                        <img src="" alt="" />
-                    </div>
-                    <h2 className='text-xl md:text-3xl lg:text-4xl font-extrabold'>
-                        Hey, I'm
-                        <p className='text-3xl md:text-4xl  lg:text-6xl py-2  lg:py-4 transition duration-600 transform hover:scale-x-125 hover:scale-y-110 duration-600  '> Vivian La Farina</p>
-                    </h2>
-                    <p className=' text-md md:text-xl lg:text-2xl  lg:py-0 '>
-                        I am a Web project Developer, specialized in E-businesses
-                    </p>
-                </article>
-                <Navbar1 />
-            </main>
-        </section>
-    );
-};
-
-export default Home;
+export default function Home() {
+  const { t } = usePreferences();
+  usePageTitle(t.architectureLabel, t.heroLead);
+  return <>
+    <section className="hero">
+      <div className="hero-copy">
+        <span className="eyebrow">{t.heroLabel}</span>
+        <h1 className="hero-name"><span>Vivian</span><span className="hero-last">La Farina</span></h1>
+        <p className="hero-role">{t.heroTag}</p>
+        <p className="hero-description">{t.heroLead}</p>
+        <div className="action-row"><Link className="button button--primary" to="/projects">{t.seeProjects} <span aria-hidden="true">↗</span></Link><Link className="button button--secondary" to="/blog">{t.readBlog} <span aria-hidden="true">↗</span></Link></div>
+      </div>
+      <ArchitectureVisual />
+    </section>
+    <section className="metric-bar" aria-label={t.highlights}>
+      <div><strong>40+</strong><span>{t.metricContributed}</span></div>
+      <div><strong>3</strong><span>{t.metricRegions}</span></div>
+      <div><strong>01</strong><span>{t.metricMission}</span></div>
+    </section>
+    <section className="section-block">
+      <div className="section-top"><div><span className="eyebrow">{t.featured}</span><h2>{t.featuredTitle}</h2><p className="section-lead">{t.featuredText}</p></div><Link to="/projects" className="text-link">{t.labLink} <span aria-hidden="true">↗</span></Link></div>
+      <ArchitectureDiagram />
+    </section>
+    <section className="section-block"><span className="eyebrow">{t.focus}</span><h2>{t.focusTitle}</h2><div className="feature-grid">{t.areas.map((title, index) => <div className="content-card" key={title}><h3>{title}</h3><p>{t.areaDesc[index]}</p></div>)}</div></section>
+    <section className="section-block"><div className="section-top"><div><span className="eyebrow">{t.latest}</span><h2>{t.latestTitle}</h2></div><Link to="/blog" className="text-link">{t.explore} <span aria-hidden="true">↗</span></Link></div><div className="feature-grid feature-grid--two"><ArticleCard articleId="iceberg"/><ArticleCard articleId="fabric"/></div></section>
+  </>;
+}

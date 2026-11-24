@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import { createContext, useContext, useEffect, useMemo, useState } from 'react';
 import translations from '../content/translations.json';
 import { getInitialLanguage, getInitialMotion, getInitialTheme, setStorageItem } from '../lib/preferences';
@@ -16,7 +17,7 @@ export function PreferencesProvider({ children }) {
 
   useEffect(() => {
     document.documentElement.dataset.theme = theme;
-    document.querySelector('meta[name="theme-color"]')?.setAttribute('content', theme === 'dark' ? '#121714' : '#e6e9e7');
+    document.querySelector('meta[name="theme-color"]')?.setAttribute('content', theme === 'dark' ? '#18181b' : '#e7e7ea');
   }, [theme]);
 
   useEffect(() => {
@@ -44,8 +45,11 @@ export function PreferencesProvider({ children }) {
   return <PreferencesContext.Provider value={value}>{children}</PreferencesContext.Provider>;
 }
 
+// eslint-disable-next-line react-refresh/only-export-components
 export function usePreferences() {
   const context = useContext(PreferencesContext);
   if (!context) throw new Error('usePreferences must be used inside PreferencesProvider');
   return context;
 }
+
+PreferencesProvider.propTypes = { children: PropTypes.node.isRequired };

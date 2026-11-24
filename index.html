@@ -1,15 +1,29 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF8" />
-    <link rel="icon" type="image/svg+xml" href="/icono.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bruno+Ace&display=swap" rel="stylesheet"> 
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-       
-    <title>Vivian La Farina VLF</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#18181b" />
+    <meta name="description" content="Vivian La Farina — IT Data Project Lead focused on data architecture, enterprise integration, data governance and applied AI." />
+    <meta property="og:title" content="Vivian La Farina | Data & Architecture" />
+    <meta property="og:description" content="Enterprise data, architecture, and technology leadership. Explore projects, technical writing and visual experiments." />
+    <meta property="og:type" content="website" />
+    <link rel="icon" type="image/svg+xml" href="/assets/box.svg" />
+    <title>Vivian La Farina | Data & Architecture</title>
+    <script>
+      // Apply the saved theme before React loads to avoid a flash of the wrong theme.
+      (() => {
+        try {
+          const saved = localStorage.getItem('vlf-theme');
+          const system = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+          const theme = saved === 'dark' || saved === 'light' ? saved : system;
+          document.documentElement.dataset.theme = theme;
+          document.querySelector('meta[name="theme-color"]').content = theme === 'dark' ? '#18181b' : '#e7e7ea';
+        } catch {
+          document.documentElement.dataset.theme = 'dark';
+        }
+      })();
+    </script>
   </head>
   <body>
     <div id="root"></div>
